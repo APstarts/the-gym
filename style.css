@@ -148,47 +148,6 @@ nav .contact-button {
   margin-bottom: 30px;
 }
 
-.circles-container {
-    position: absolute;
-    top:30%;
-    left:40%;
-}
-
-.circle-1 {
-    height: 400px;
-    width: 400px;
-    border-radius: 50%;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #333;
-    border-top-color: var(--text-white);
-    animation: clockWise 3s linear infinite;
-    position: relative;
-}
-
-.circle-2 {
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-    border: 4px solid #333;
-    border-top: 4px solid white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: antiClockWise 3s linear infinite
-}
-
-@keyframes clockWise {
-    from {transform: rotate(0deg)}
-    to {transform: rotate(360deg);}
-}
-
-@keyframes antiClockWise {
-    from {transform: translate(-50%, -50%) rotate(0deg)}
-    to {transform: translate(-50%, -50%) rotate(-360deg);}
-}
-
 .btn {
   display: inline-block;
   padding: 15px 40px;
@@ -229,6 +188,7 @@ nav .contact-button {
   margin: 0 auto;
 }
 
+/* Gallery section styling */
 .gallery {
     position: relative;
     height: 100vh;
@@ -252,6 +212,7 @@ nav .contact-button {
     width: 80%;
     height: 80%;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .gallery-container {
@@ -263,6 +224,10 @@ nav .contact-button {
     align-content: center;
     opacity: 0; /* Hidden until scroll */
     transform: scale(0.5); /* Slight zoom out effect during reveal */
+}
+
+.gallery-item img{
+    border-radius: 10px;
 }
 
 /* contact section */
