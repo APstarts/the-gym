@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gym</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <span class="logo">THE GYM</span>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Gallery">Gallery</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero section -->
+    <section id="hero">
+        <div class="hero-slider">
+            <div class="slide active">
+                <h1>Pain is<br><span style="color: var(--primary);">Progress</span></h1>
+                <p>Push your limits and redefine what is possible. Join the elite.</p>
+                <a href="#contact" class="btn">Start Your Journey</a>
+            </div>
+            <div class="slide">
+                <h1>Iron<br><span style="color: var(--primary);">Never Lies</span></h1>
+                <p>Consistency is the key to transformation. Get started today.</p>
+                <a href="#contact" class="btn">Claim Membership</a>
+            </div>
+            <div class="slide">
+                <h1>Build Your<br><span style="color: var(--primary);">Legacy</span></h1>
+                <p>The best time to start was yesterday. The second best time is now.</p>
+                <a href="#contact" class="btn">Join the Tribe</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about" class="about">
+        <h2>Our Philosophy</h2>
+        <div class="typewriter">
+
+        </div>
+    </section>
+
+    <!-- gallery section -->
+    <section id="gallery" class="gallery">
+        <div class="gallery-container">
+            <!-- Duplicated for infinite scroll effect -->
+            <div class="gallery-item"><img
+                    src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=400"
+                    alt="Gym 1"></div>
+            <div class="gallery-item"><img
+                    src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&q=80&w=400"
+                    alt="Gym 2"></div>
+            <div class="gallery-item"><img
+                    src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&q=80&w=400"
+                    alt="Gym 3"></div>
+            <div class="gallery-item"><img
+                    src="https://images.unsplash.com/photo-1581009146145-b5ef03a7403f?auto=format&fit=crop&q=80&w=400"
+                    alt="Gym 4"></div>
+            <!-- Repeat -->
+            <div class="gallery-item"><img
+                    src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=400"
+                    alt="Gym 1"></div>
+            <div class="gallery-item"><img
+                    src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&q=80&w=400"
+                    alt="Gym 2"></div>
+            <div class="gallery-item"><img
+                    src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&q=80&w=400"
+                    alt="Gym 3"></div>
+            <div class="gallery-item"><img
+                    src="https://images.unsplash.com/photo-1581009146145-b5ef03a7403f?auto=format&fit=crop&q=80&w=400"
+                    alt="Gym 4"></div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="contact-info">
+            <h2>Ready to<br>Commit?</h2>
+            <p>We don't do excuses. We do results. Send us a message to book your first orientation session with a
+                master trainer.</p>
+        </div>
+        <form class="contact-form"
+            onsubmit="event.preventDefault(); alert('Message Received. We will see you at the squat rack.');">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <textarea rows="5" placeholder="Your Goals (e.g., Strength, Weight Loss, Hybrid Training)"></textarea>
+            <button type="submit" class="btn">Send Transmission</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-logo">Iron Haven</div>
+        <div class="footer-links">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Careers</a>
+            <a href="#">Contact</a>
+        </div>
+        <p class="copy">&copy; 2025 IRON HAVEN PERFORMANCE SYSTEMS. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
