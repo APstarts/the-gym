@@ -69,3 +69,30 @@ document.querySelectorAll('nav ul li').forEach((li) => {
         }
     })
 })
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+const tl = gsap.timeline({
+    scrollTrigger: {
+        trigger: "#gallery",
+        start: "top top",
+        end: "+=150% top", // Length of the scroll animation
+        scrub: true,       // Smoothly links animation to scroll
+        pin: true,         // Stops the page from moving while animating
+        anticipatePin: 1
+    }
+});
+
+tl.to(".gallery-hero", {
+    scale: 0.1,
+    opacity: 0,
+    duration: 1,
+    ease: "power2.inOut"
+})
+.to(".gallery-container", {
+    opacity: 1,
+    scale: 1,
+    duration: 1,
+    ease: "power2.out"
+}, "<"); // "<" starts this at the same time as the hero animation
