@@ -54,3 +54,18 @@ function type(){
 window.onload = () => {
     type();
 }
+
+//smooth scroll
+document.querySelectorAll('nav ul li').forEach((li) => {
+    li.addEventListener('click', () => {
+        const targetId = li.textContent.toLowerCase();
+        const targetSection = document.getElementById(targetId);
+
+        if(targetSection) {
+            window.scrollTo({
+                top: targetSection.offsetTop - 100,
+                behavior: 'smooth'
+            })
+        }
+    })
+})

@@ -7,6 +7,10 @@
   --transition: all 0.3s ease;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
   padding: 0;
   margin: 0;
