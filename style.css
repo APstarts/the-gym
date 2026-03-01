@@ -264,14 +264,30 @@ nav .contact-button {
 /* --- FOOTER --- */
 footer {
   padding: 50px 10%;
-  background: var(--bg-dark);
-  border-top: 1px solid #222;
-  text-align: center;
+  position: relative;
+  /* background: var(--bg-dark); */
+}
+
+.layer-footer {
+    position: absolute;
+  inset: 0;       /* Covers the entire footer */
+  z-index: -1;    /* Pushes it BEHIND the text */
+  
+  /* Background properties */
+  background-image: 
+    radial-gradient(circle at center, transparent 30%, black 100%),
+    url("https://images.unsplash.com/photo-1673872967335-1440705f7b2e?q=80&w=1170&auto=format&fit=crop");
+  background-size: cover;
+  background-position: center;
+
+  /* 3. The Grayscale: Applied ONLY to this layer */
+  filter: grayscale(100%);
 }
 
 .footer-logo {
   font-size: 2rem;
   font-weight: 900;
+  z-index: 2;
   color: var(--primary);
   margin-bottom: 20px;
 }
